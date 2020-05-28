@@ -1,5 +1,7 @@
 ![Next.js Logo](https://github.com/zeit/now/blob/master/packages/frameworks/logos/next.svg)
 
+ZEIT is now Vercel!
+
 # Next.js Example
 
 This directory is a brief example of a [Next.js](https://nextjs.org) app that can be deployed with ZEIT Now and zero configuration.
