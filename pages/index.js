@@ -140,10 +140,19 @@ const Home = props => {
 };
 
 export async function getServerSideProps(context) {
-
   const headers = prepObjectKeys(context.req.headers)
 
-  logger.info({ request: { headers: headers } }, "Index request")
+  logger.info({
+    request: {
+      headers: headers,
+      url: context.req.url,
+      method: context.req.method
+    },
+    response: {
+      statusCode: context.res.statusCode
+    }
+  },
+    "Index request")
 
   return {
     props: {}, // will be passed to the page component as props

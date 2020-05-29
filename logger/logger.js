@@ -50,6 +50,7 @@ function toLogEntry(item) {
     return {
         metadata: {
             ...metadata,
+            url: window.document.URL,
             level: level
         },
         log_entry: message,
