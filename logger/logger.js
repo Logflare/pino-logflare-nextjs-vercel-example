@@ -22,7 +22,7 @@ export default pino(
 
 const postRequest = async (lfRequestBody) => {
     const ingestApiKey = "S85LoAXJUB8U"
-    const source_id = "f5f2c049-f3c7-4e90-bff6-0cff8b89638a"
+    const source_id = "3506f105-02a6-4118-bbb4-3f05e5d684b2"
     const logflareApiURL = `https://api.logflare.app/logs?api_key=${ingestApiKey}&source=${source_id}`
 
 
@@ -39,7 +39,7 @@ const postRequest = async (lfRequestBody) => {
 }
 
 function toLogEntry(item) {
-    // Zero to almost zero web vitals until Logflare has a special Web Vitals endpoint
+    // Make web vitals ints until Logflare has a special Web Vitals endpoint
     const newItem = maybeNewWebVitals(item)
     const timestamp = newItem.time || new Date().getTime()
     const message = newItem.msg
@@ -80,19 +80,12 @@ function maybeNewWebVitals(item) {
             id: item.web_vitals.id,
             label: item.web_vitals.label,
             name: item.web_vitals.name,
-            startTime: zeroToAlmostZero(item.web_vitals.startTime),
-            value: zeroToAlmostZero(item.web_vitals.value)
+            startTime: Math.round(item.web_vitals.startTime),
+            value: Math.round(item.web_vitals.value)
         }
 
         item.web_vitals = wv
         return item
     }
     return item
-}
-
-function zeroToAlmostZero(num) {
-    if (num == 0) {
-        return 0.00000000000001
-    }
-    return num
 }
