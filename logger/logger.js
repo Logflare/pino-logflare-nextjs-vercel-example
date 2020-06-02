@@ -1,7 +1,5 @@
 import pino from 'pino';
 
-const stream = require('./logflareStream').default
-
 export default pino(
     {
         level: 'debug',
@@ -16,8 +14,7 @@ export default pino(
                 postRequest(body)
             }
         }
-    },
-    stream,
+    }
 );
 
 const postRequest = async (lfRequestBody) => {
@@ -44,7 +41,7 @@ function toLogEntry(item) {
     const timestamp = newItem.time || new Date().getTime()
     const message = newItem.msg
     const level = levelToStatus(newItem.level)
-
+    const _ = require("underscore");
     const metadata = _.omit(newItem, ["time", "msg", "level"])
 
     return {

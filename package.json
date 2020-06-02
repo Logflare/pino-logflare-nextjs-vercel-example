@@ -14,8 +14,8 @@
   "dependencies": {
     "next": "^9.4.2",
     "pino": "^5.17.0",
-    "pino-logflare": "^0.1.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "underscore": "^1.10.2"
   }
 }
