@@ -5,8 +5,6 @@ import { prepObjectKeys } from "../logger/utils"
 
 const logger = require('../logger/logger').default
 
-logger.info("Got logger")
-
 const Home = props => {
 
   const [date, setDate] = useState(null);

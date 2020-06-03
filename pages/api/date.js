@@ -1,6 +1,8 @@
 import { prepObjectKeys } from "../../logger/utils"
 const logger = require('../../logger/logger').default
 
+logger.info("Got logger")
+
 export default (req, res) => {
 
   const headers = prepObjectKeys(req.headers)
