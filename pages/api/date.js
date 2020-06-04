@@ -7,7 +7,7 @@ export default (req, res) => {
 
   const headers = prepObjectKeys(req.headers)
 
-  console.info("API request:", {
+  const data = {
     request: {
       headers: headers,
       url: req.url,
@@ -17,7 +17,8 @@ export default (req, res) => {
       statusCode: res.statusCode
     }
   }
-  )
+
+  console.info("API request:", JSON.stringify(data))
 
   const date = new Date()
     .toISOString()
