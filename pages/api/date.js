@@ -3,11 +3,11 @@ const logger = require('../../logger/logger').default
 
 export default (req, res) => {
 
-  logger.info("Getting headers")
+  console.info("Getting headers")
 
   const headers = prepObjectKeys(req.headers)
 
-  logger.info({
+  console.info("API request:", {
     request: {
       headers: headers,
       url: req.url,
@@ -16,8 +16,8 @@ export default (req, res) => {
     response: {
       statusCode: res.statusCode
     }
-  },
-    "API request")
+  }
+  )
 
   const date = new Date()
     .toISOString()
