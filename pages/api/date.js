@@ -18,7 +18,7 @@ export default (req, res) => {
     }
   }
 
-  console.info("API request:", JSON.stringify(data))
+  console.info("LABEL", JSON.stringify(data))
 
   const date = new Date()
     .toISOString()
