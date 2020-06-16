@@ -3,6 +3,8 @@ const logger = require('../../logger/logger').default
 
 export default (req, res) => {
 
+  logger.info("Getting headers")
+
   const headers = prepObjectKeys(req.headers)
 
   logger.info({
