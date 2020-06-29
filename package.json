@@ -12,10 +12,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "lodash": "^4.17.15",
     "next": "^9.4.2",
-    "pino": "^5.17.0",
+    "pino": "^6.3.2",
+    "pino-logflare": "logflare/pino-logflare",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "underscore": "^1.10.2"
+    "react-dom": "^16.13.1"
   }
 }

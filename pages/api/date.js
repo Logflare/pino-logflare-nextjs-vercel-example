@@ -1,5 +1,5 @@
 import { prepObjectKeys } from "../../logger/utils"
-const logger = require('../../logger/logger').default
+import logger from '../../logger/logger'
 
 export default (req, res) => {
 

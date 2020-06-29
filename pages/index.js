@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Head from '../components/head';
 import Nav from '../components/nav';
 import { prepObjectKeys } from "../logger/utils"
-
-const logger = require('../logger/logger').default
+import logger from '../logger/logger'
 
 const Home = props => {
 
