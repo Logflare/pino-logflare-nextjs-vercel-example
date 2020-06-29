@@ -4,8 +4,8 @@ import _ from "lodash"
 
 // create pino-logflare console stream for serverless functions and send function for browser logs
 const { stream, send } = logflarePinoVercel({
-    apiKey: "sJPgBPa0YxuB",
-    sourceToken: "5065880e-bd10-4c5a-b2e8-e7632edb469a"
+    apiKey: "S85LoAXJUB8U",
+    sourceToken: "3506f105-02a6-4118-bbb4-3f05e5d684b2"
 });
 
 // create pino loggger
