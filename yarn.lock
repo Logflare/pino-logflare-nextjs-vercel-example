@@ -4102,7 +4102,7 @@ pify@^4.0.1:
 
 pino-logflare@logflare/pino-logflare:
   version "0.3.1"
-  resolved "https://codeload.github.com/logflare/pino-logflare/tar.gz/c0fc635d0e023c9ad371fac996322ab976d8da8e"
+  resolved "https://codeload.github.com/logflare/pino-logflare/tar.gz/3c18b5fd3b8678548918ffa0fc5f657439158144"
   dependencies:
     axios "^0.19.2"
     batch2 "^1.0.6"
