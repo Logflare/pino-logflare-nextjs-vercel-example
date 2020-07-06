@@ -3456,10 +3456,10 @@ lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
-logflare-transport-core@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/logflare-transport-core/-/logflare-transport-core-0.2.0.tgz#bc42830949b2918289268e54aad2140aa8828970"
-  integrity sha512-ovbLjYR8fHTInEBlV6pDuHMBeIgMxD2LIDK0PxrZGlyDO8vK8iJpyeWNPWI5PVJn5TTP19vUsR8soUQJkyFZnQ==
+logflare-transport-core@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/logflare-transport-core/-/logflare-transport-core-0.2.3.tgz#fb50a97ae71e836ae7674d8cc7e3faa54e3d86a0"
+  integrity sha512-1oiJN2/Khc3Jodwx5u7zX+J5KG8L2rjnqI+90+FV67ozk+t/aV9ju3BBHSjJB8zmP2fHBBPrYTQuS1QiaRMOFg==
   dependencies:
     "@types/lodash" "^4.14.153"
     axios "^0.19.2"
@@ -4102,14 +4102,14 @@ pify@^4.0.1:
 
 pino-logflare@logflare/pino-logflare:
   version "0.3.1"
-  resolved "https://codeload.github.com/logflare/pino-logflare/tar.gz/7aaf6ac33ad9baef9a60ae96230c53ac04624ad9"
+  resolved "https://codeload.github.com/logflare/pino-logflare/tar.gz/a72b18f95ce9e360376010a116d03e9e779b9d68"
   dependencies:
     axios "^0.19.2"
     batch2 "^1.0.6"
     commander "^5.0.0"
     fast-json-parse "^1.0.3"
     lodash "^4.17.15"
-    logflare-transport-core "^0.2.0"
+    logflare-transport-core "^0.2.3"
     pino "^6.3.2"
     pumpify "^2.0.1"
     split2 "^3.1.1"
