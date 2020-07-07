@@ -3,9 +3,14 @@ import { logflarePinoVercel } from "pino-logflare"
 import _ from "lodash"
 
 // create pino-logflare console stream for serverless functions and send function for browser logs
-const { stream, send } = logflarePinoVercel({
+const stream = createWriteStream({
     apiKey: "S85LoAXJUB8U",
-    sourceToken: "3506f105-02a6-4118-bbb4-3f05e5d684b2"
+    sourceToken: "b1b334ff-686c-472d-8fd7-2411460053e1"
+});
+
+const send = createPinoBrowserSend({
+    apiKey: "S85LoAXJUB8U",
+    sourceToken: "b1b334ff-686c-472d-8fd7-2411460053e1"
 });
 
 // create pino loggger
