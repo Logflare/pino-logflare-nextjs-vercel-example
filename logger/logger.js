@@ -1,5 +1,5 @@
 import pino from 'pino'
-import { logflarePinoVercel } from "pino-logflare"
+import { logflarePinoVercel } from 'pino-logflare'
 import _ from "lodash"
 
 // create pino-logflare console stream for serverless functions and send function for browser logs
@@ -12,7 +12,6 @@ const { stream, send } = logflarePinoVercel({
 const logger = pino({
     browser: {
         transmit: {
-            level: "info",
             send: send,
         }
     },
