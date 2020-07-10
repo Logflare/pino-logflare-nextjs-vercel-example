@@ -1,6 +1,5 @@
 import pino from 'pino'
 import { createPinoBrowserSend, createWriteStream } from 'pino-logflare'
-import _ from "lodash"
 
 // create pino-logflare stream for server logs sent to Logflare via http
 const stream = createWriteStream({
