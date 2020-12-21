@@ -10,7 +10,7 @@ const Home = props => {
 
   useEffect(() => {
     async function getDate() {
-      logger.info("Getting date now")
+      logger.info("Getting date from API")
 
 
       const res = await fetch('/api/date');
