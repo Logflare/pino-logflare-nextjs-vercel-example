@@ -15,7 +15,7 @@
     "lodash": "^4.17.15",
     "next": "^9.4.2",
     "pino": "^6.3.2",
-    "pino-logflare": "^0.3.4",
+    "pino-logflare": "^0.3.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
