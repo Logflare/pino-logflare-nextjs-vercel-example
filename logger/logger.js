@@ -18,7 +18,6 @@ const logger = pino({
     base: {
         processes_str: JSON.stringify(process.versions),
         revision: process.env.VERCEL_GITHUB_COMMIT_SHA,
-        env_str: JSON.stringify(process.env),
     },
 }, stream);
 
